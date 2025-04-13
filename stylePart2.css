@@ -1,0 +1,111 @@
+*{
+    font-family: 'Courier New';
+    transition: 2s;
+}
+h1,h3{
+    color: #b92b27;
+}
+#login{
+    background-color: white;
+}
+#signup{
+background-color:#b92b27;
+color:white;
+}
+.upvote{
+    background-color:green;
+    color:aliceblue;
+}
+/* Desendant selector */
+p a{
+    text-decoration: none;
+    font-weight: 600;
+    color:rgb(121, 31, 121);
+    background-color:yellow;
+}
+nav ul li a{
+    color: hotpink;
+}
+/* Sibling selector */
+p + h3{
+    text-decoration: underline;
+}
+.upvote + .answer{
+    background-color: cornflowerblue;
+    color:antiquewhite;
+}
+/* Child selectors */
+div > input {
+    background-color:lavenderblush;
+} 
+/* child selectors -> we cannot select directly/ skip levels of hierachy whereas we can skip in desendant seletors */
+
+input[type = "text"]{
+    color:rgb(128, 0, 83);
+}
+input[type ="password"]{
+    color:rgb(152, 70, 245);
+}
+input[type]{
+    background-color:ghostwhite;
+    color: black;
+}
+#login:hover{
+    letter-spacing: 4px;
+    background-color:#000;
+    color: #fff;
+    
+
+}
+ #signup:hover{
+    letter-spacing: 4px;
+    color: #fff;
+    background-color: black;
+} 
+h3:hover{
+    text-decoration: none;
+}
+button:hover{
+    background-color:coral;
+}
+/* Active works when something is clicked  say a button is clicked*/
+button:active{
+    background-color: deeppink;
+    color: black;
+}
+p:active{
+    font-weight: 800;
+    color: green;
+}
+input[type = "radio"]:checked + label{
+    color: crimson;
+    font-weight: bolder;
+}
+/* n-th of type : used to change css property of n type elements:-
+Suppose we have
+1
+2
+3
+4
+5 and we want yellow color for even number then we use this property with n-th of type(2)*/
+
+.post:nth-of-type(2n){
+    color:lightcoral;
+    font-weight: bolder;
+}
+/* Pseudo elements */
+/* 1.First letter */
+h3::first-letter{
+    font-family: cursive;
+    color:black;
+}
+p::first-line{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
+    text-decoration-style:double;
+    font-weight: 600;
+    line-height:1.5;
+}
+p::selection{
+    background-color: limegreen;
+}

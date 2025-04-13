@@ -1,0 +1,27 @@
+div{
+    width: 250px;
+    height: 500px;
+    background-color: palevioletred;
+    border-width: 5px;
+    border-style: double;
+    border-color: pink;
+    padding: 15px;
+    margin: 20px;
+}
+
+ button{
+    
+    border: 8px double darkorchid;
+    background-color:black;
+    color: aliceblue;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px;
+    font-size: x-large;
+    cursor: pointer;
+ }
+ button:active{
+    background: linear-gradient(skyblue,royalblue,white);
+    color:rgb(34, 1, 1);
+    
+ }
+ 

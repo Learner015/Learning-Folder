@@ -1,0 +1,25 @@
+*{
+    margin: 2px;
+    padding: 10px;
+}
+h2{
+    color: orange;
+    
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration-thickness: 3.5px;
+    text-decoration-style: wavy;
+    line-height: 55px;
+    
+}
+button{
+    background-color: blue;
+    color: white;
+    line-height: 25px;
+}
+p{
+    background-color: black;
+    line-height: 25px;
+    color: white;
+    
+}

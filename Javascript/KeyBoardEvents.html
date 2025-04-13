@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Move Checker</title>
+</head>
+<body>
+    <input type="text" placeholder="Move Your Character" />
+    <p id="message"></p>
+
+    <script>
+        let inp = document.querySelector('input');
+        let message = document.getElementById('message');
+
+        inp.addEventListener('keydown', function(event) {
+            console.log(event.code); // Logs the code of the pressed key
+            console.log(event.key); // Logs the value of the pressed key
+            
+            if (event.code === "ArrowUp") {
+                message.textContent = "Jumped up your character.";
+            } else if (event.code === "ArrowDown") {
+                message.textContent = "Jumping off the cliff.";
+            } else if (event.code === "ArrowLeft") {
+                message.textContent = "Moved left.";
+            } else if (event.code === "ArrowRight") {
+                message.textContent = "Moved right.";
+            } else {
+                message.textContent = "Please press only arrow keys.";
+            }
+        });
+    </script>
+</body>
+</html>
