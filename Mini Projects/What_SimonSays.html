@@ -108,11 +108,11 @@
         }
 
         function LevelUp() {
-    // Reset userSeq for the new level
+    
     userSeq = [];
     level++;
     h2.innerText = "Level " + `${level}`;
-    // Random button flash for new sequence
+   
     let randInx = Math.floor(Math.random() * 9);
     let randColr = colors[randInx];
     let rand_btn = document.querySelector(`.${randColr}`);
@@ -123,18 +123,18 @@
 
 function checkAns() {
     console.log(` ${level} = current level`);
-    let idx = userSeq.length - 1; // Current index to validate
+    let idx = userSeq.length - 1; 
 
     if (userSeq[idx] === gameSeq[idx]) {
         console.log("Correct input so far...");
-        // Check if user sequence matches fully at the current level
+        
         if (userSeq.length === gameSeq.length) {
             console.log("Level complete!");
-            setTimeout(LevelUp, 1000); // Proceed to next level
+            setTimeout(LevelUp, 1000);
         }
     } else {
         console.log("Mismatch! Game Over.");
-        h2.innerText = "Game Over! Press any key to start";
+        h2.innerText = `Game Over! Your score is ${level} Press any key to start`;
         resetGame();
     }
 }
